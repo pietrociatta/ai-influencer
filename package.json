@@ -1,0 +1,22 @@
+{
+  "name": "ai-influencer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Authenticated X (Twitter) web API client — session cookies, HAR tooling, GraphQL",
+  "scripts": {
+    "verify": "tsx --env-file-if-exists=.env scripts/verify.ts",
+    "user": "tsx --env-file-if-exists=.env scripts/user.ts",
+    "search": "tsx --env-file-if-exists=.env scripts/test-search.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.1087.0",
+    "x-client-transaction-id": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "tsx": "^4.19.2",
+    "typescript": "~6.0.2"
+  }
+}
