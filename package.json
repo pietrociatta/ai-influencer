@@ -1,22 +1,24 @@
 {
   "name": "ai-influencer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "Authenticated X (Twitter) web API client — session cookies, HAR tooling, GraphQL",
+  "description": "UGC studio: AI influencer → product → direction → video",
   "scripts": {
-    "verify": "tsx --env-file-if-exists=.env scripts/verify.ts",
-    "user": "tsx --env-file-if-exists=.env scripts/user.ts",
-    "search": "tsx --env-file-if-exists=.env scripts/test-search.ts",
+    "dev": "next dev --port 8787",
+    "build": "next build",
+    "start": "next start --port 8787",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@aws-sdk/client-secrets-manager": "^3.1087.0",
-    "x-client-transaction-id": "^0.3.1"
+    "next": "^15.5.25",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
-    "tsx": "^4.19.2",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
     "typescript": "~6.0.2"
   }
 }
